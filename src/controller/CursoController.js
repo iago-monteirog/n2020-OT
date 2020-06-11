@@ -1,8 +1,8 @@
 const connection = require("../database/connection");
-const Usuario = require('../models/usuario');
+const Usuario = require('../models/curso');
 
 module.exports = {
-    async create(request, response){
+    async index(request, response){
         
     }
 }
