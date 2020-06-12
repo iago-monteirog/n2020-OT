@@ -9,7 +9,7 @@ module.exports = {
             password
         })
         return response.json({
-            sucess: {message: "Cadastrado com sucesso"}
+            success: {message: "Cadastrado com sucesso"}
         })
     }
 }

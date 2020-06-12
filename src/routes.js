@@ -5,5 +5,6 @@ const UsuarioController = require("./controller/UsuarioController");
 const CursoController = require("./controller/CursoController");
 
 routes.post('/usuario', UsuarioController.create)
+routes.post('/curso/criar', CursoController.create)
 
 module.exports = routes;

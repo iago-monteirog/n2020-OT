@@ -1,8 +1,16 @@
 const connection = require("../database/connection");
-const Usuario = require('../models/curso');
+const Curso = require('../models/curso');
 
 module.exports = {
-    async index(request, response){
-        
+    async create(request, response){
+        const {titulo, link, imagem} = request.body;
+        const curso = await Curso.create({
+            titulo, 
+            link,
+            imagem
+        })
+        return response.json({
+            success: {message: "Curso cadastrado com sucesso"}
+        })
     }
 }
