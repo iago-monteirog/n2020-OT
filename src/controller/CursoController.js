@@ -12,5 +12,10 @@ module.exports = {
         return response.json({
             success: {message: "Curso cadastrado com sucesso"}
         })
+    },
+
+    async index(request, response) {
+        const curso = await Curso.findAll()
+        return response.json(curso)
     }
 }
