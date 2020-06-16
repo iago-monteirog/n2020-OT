@@ -10,4 +10,9 @@ module.exports = {
             underscored: false,
         }
     },
+
+    "production": {
+        dialect: "mysql",
+        connection: process.env.CLEARDB_DATABASE_URL,
+    }
 }
