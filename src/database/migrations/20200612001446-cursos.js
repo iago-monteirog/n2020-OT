@@ -20,7 +20,15 @@ module.exports = {
          imagem: {
            type: Sequelize.TEXT,
            allowNull: false,
-         }
+         },
+          created_at: {
+            type: Sequelize.DATE,
+            allowNull: false,
+          },
+          updated_at: {
+            type: Sequelize.DATE,
+            allowNull: false,
+          }
       });
   },
 

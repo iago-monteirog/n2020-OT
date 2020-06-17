@@ -6,8 +6,8 @@ module.exports = {
     "host": "localhost",
     "dialect": "mysql",
     "define": {
-      "timestamps": false,
-      "underscored": false,
+      "timestamps": true,
+      "underscored": true,
   }
   },
   "test": {
@@ -18,16 +18,4 @@ module.exports = {
     "dialect": "mysql",
     "operatorsAliases": false
   },
-
-  "production": {
-    "username": "bfb5c248e2d3fd",
-    "password": "989674ce",
-    "database": "heroku_2a34f30e84faf1a",
-    "host": "us-cdbr-east-05.cleardb.net",
-    "dialect": "mysql",
-    "define": {
-      "timestamps": false,
-      "underscored": false,
-  }
-  }
 }
