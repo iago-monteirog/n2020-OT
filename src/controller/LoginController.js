@@ -1,3 +1,5 @@
+const connection = require('../database/connection')
+
 const Usuario = require('../models/usuario');
 const jwt = require('jsonwebtoken');
 

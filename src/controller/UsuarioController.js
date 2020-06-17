@@ -1,3 +1,4 @@
+const connection = require('../database/connection')
 const Usuario = require('../models/usuario');
 
 module.exports = {
@@ -8,6 +9,7 @@ module.exports = {
             password
         })
         return response.json({
+            user,
             success: {message: "Cadastrado com sucesso"}
         })
     }
