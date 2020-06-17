@@ -11,7 +11,7 @@ routes.post("/login", LoginController.login);
 routes.post('/usuario', UsuarioController.create);
 
 routes.post('/curso/criar', auth, CursoController.create);
-routes.get('/cursos', auth, CursoController.index);
+routes.get('/cursos', CursoController.index);
 routes.put('/curso/atualiza', auth, CursoController.update)
 routes.delete('/curso/deleta', auth, CursoController.delete)
 
