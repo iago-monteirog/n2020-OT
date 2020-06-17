@@ -14,7 +14,7 @@ module.exports = {
     },
 
     async index(request, response) {
-        const {curso} = await Curso.findAll()
+        const curso = await Curso.findAll()
         return response.json(curso)
     },
 
