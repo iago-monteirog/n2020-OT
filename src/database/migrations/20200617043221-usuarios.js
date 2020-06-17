@@ -16,11 +16,9 @@ module.exports = {
         },
         createdAt: {
           type: Sequelize.DATE,
-          field: 'created_at'
         },
         updatedAt: {
           type: Sequelize.DATE,
-          field: 'updated_at'
         },
        });
   },
