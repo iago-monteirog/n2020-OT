@@ -3,6 +3,7 @@ const Curso = require('../models/curso');
 module.exports = {
     async create(request, response){
         const {titulo, link, imagem} = request.body;
+        var base64Image = new Buffer(imagem , 'binary' ).toString('base64');
         const curso = await Curso.create({
             titulo, 
             link,
@@ -14,7 +15,9 @@ module.exports = {
     },
 
     async index(request, response) {
-        const curso = await Curso.findAll()
+        const curso = await Curso.findAll({
+            attributes: ['titulo', 'imagem', 'link']
+        })
         return response.json(curso)
     },
 

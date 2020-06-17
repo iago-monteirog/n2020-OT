@@ -5,7 +5,7 @@ class Curso extends Model {
         super.init({
             titulo: DataTypes.STRING,
             link: DataTypes.STRING,
-            imagem: DataTypes.TEXT,
+            imagem: DataTypes.BLOB,
         }, {
             sequelize
         });
