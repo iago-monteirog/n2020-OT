@@ -5,7 +5,7 @@ module.exports = {
         const {username, password} = request.body;
         await Usuario.create({
             username,
-            password
+            password,
         })
         return response.json({
             success: {message: "Cadastrado com sucesso"}
