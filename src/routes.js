@@ -5,14 +5,14 @@ const UsuarioController = require("./controller/UsuarioController");
 const CursoController = require("./controller/CursoController");
 const LoginController = require("./controller/LoginController");
 
-routes.post("/login", LoginController.login);
-routes.post('/usuario', (request, response, next) => {
-    console.log(request.body), next()
-},UsuarioController.create);
+const auth = require("../src/middlewares/auth")
 
-routes.post('/curso/criar', CursoController.create);
-routes.get('/cursos', CursoController.index);
-routes.put('/curso/atualiza', CursoController.update)
-routes.delete('/curso/deleta', CursoController.delete)
+routes.post("/login", LoginController.login);
+routes.post('/usuario', UsuarioController.create);
+
+routes.post('/curso/criar', auth, CursoController.create);
+routes.get('/cursos', auth, CursoController.index);
+routes.put('/curso/atualiza', auth, CursoController.update)
+routes.delete('/curso/deleta', auth, CursoController.delete)
 
 module.exports = routes;
