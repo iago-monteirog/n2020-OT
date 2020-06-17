@@ -18,11 +18,12 @@ module.exports = {
     "dialect": "mysql",
     "operatorsAliases": false
   },
+
   "production": {
-    "username": "b70bb72ec449ee",
-    "password": "2b327bf6",
-    "database": "heroku_b73f9900251b5df",
-    "host": "us-cdbr-east-05.cleardb.net",
+    "username": "gcw6kaao3xhtwb5k",
+    "password": "cysqtxk0rukhknm1",
+    "database": "e8crekhl1bs7de0y",
+    "host": "r4919aobtbi97j46.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql",
     "define": {
       "timestamps": false,
