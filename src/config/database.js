@@ -20,10 +20,10 @@ module.exports = {
   },
 
   "production": {
-    "username": "gcw6kaao3xhtwb5k",
-    "password": "cysqtxk0rukhknm1",
-    "database": "e8crekhl1bs7de0y",
-    "host": "r4919aobtbi97j46.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "username": "bfb5c248e2d3fd",
+    "password": "989674ce",
+    "database": "heroku_2a34f30e84faf1a",
+    "host": "us-cdbr-east-05.cleardb.net",
     "dialect": "mysql",
     "define": {
       "timestamps": false,
