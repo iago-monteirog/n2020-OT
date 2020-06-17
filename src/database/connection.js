@@ -4,8 +4,7 @@ const dbConfig = require('../config/database');
 const Usuario = require('../models/usuario')
 const Curso = require('../models/curso')
 
-const connection = new Sequelize(process.env.CLEARDB_ENV || dbConfig.development);
-
+const connection = new Sequelize(process.env.DB_ENV || dbConfig.development);
 
 Usuario.init(connection)
 Curso.init(connection)
