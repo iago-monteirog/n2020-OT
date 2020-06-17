@@ -8,7 +8,8 @@ class Curso extends Model {
             imagem: DataTypes.BLOB,
         }, {
             sequelize
-        })
+        });
+        return this;
     }
 }
 

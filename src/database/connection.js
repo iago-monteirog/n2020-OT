@@ -6,6 +6,7 @@ const Curso = require('../models/curso')
 
 const connection = new Sequelize(process.env.CLEARDB_ENV || dbConfig.development);
 
+
 Usuario.init(connection)
 Curso.init(connection)
 
