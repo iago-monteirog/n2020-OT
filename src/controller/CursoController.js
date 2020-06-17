@@ -1,5 +1,3 @@
-const connection = require('../database/connection')
-
 const Curso = require('../models/curso');
 
 module.exports = {
