@@ -6,7 +6,9 @@ const CursoController = require("./controller/CursoController");
 const LoginController = require("./controller/LoginController");
 
 routes.post("/login", LoginController.login);
-routes.post('/usuario', UsuarioController.create);
+routes.post('/usuario', (request, response, next) => {
+    console.log(request.body), next()
+},UsuarioController.create);
 
 routes.post('/curso/criar', CursoController.create);
 routes.get('/cursos', CursoController.index);
