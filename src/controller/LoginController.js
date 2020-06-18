@@ -1,5 +1,7 @@
 const Usuario = require('../models/usuario');
 const jwt = require('jsonwebtoken');
+const connection = require("../database/connection")
+
 
 const authConfig = require('../config/auth.json');
 

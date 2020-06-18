@@ -8,7 +8,7 @@ module.exports = {
     "define": {
       "timestamps": true,
       "underscored": false,
-  }
+    }
   },
   "test": {
     "username": "root",

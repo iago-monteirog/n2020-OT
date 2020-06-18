@@ -1,9 +1,10 @@
 const Curso = require('../models/curso');
+const connection = require("../database/connection")
+
 
 module.exports = {
     async create(request, response){
         const {titulo, link, imagem} = request.body;
-        var base64Image = new Buffer(imagem , 'binary' ).toString('base64');
         const curso = await Curso.create({
             titulo, 
             link,
