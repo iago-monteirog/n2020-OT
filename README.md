@@ -22,16 +22,16 @@
 
 # Integrantes:
 
--Iago Monteiro Garcia RM82448
--Abraão Azevedo RM83983
--Rodrigo Sussumu RM83888
--Geovanne Amorim RM82578
--Luís Bispo RM80389
--Nícolas Nunes RM82331
+- Iago Monteiro Garcia RM82448
+- Abraão Azevedo RM83983
+- Rodrigo Sussumu RM83888
+- Geovanne Amorim RM82578
+- Luís Bispo RM80389
+- Nícolas Nunes RM82331
 
 # Local das querys 
 - src/controller/
 
 # Arquivo da coleção JSON 
 
--N2020.postman_collection.json
+- nnnnnnnnnnnnnN2020.postman_collection.json
