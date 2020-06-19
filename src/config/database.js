@@ -20,10 +20,10 @@ module.exports = {
   },
 
   "production": {
-    "username": "b60e841c328326",
-    "password": "8bc3feee",
-    "database": "heroku_41cbdf257052fae",
-    "host": "us-cdbr-east-05.cleardb.net",
+    "username": process.env.DB_USERNAME,
+    "password": process.env.DB_PASSWORD,
+    "database": process.env.DB_DATABASE,
+    "host": process.env.DB_HOST,
     "dialect": "mysql",
     "define": {
       "timestamps": false,
