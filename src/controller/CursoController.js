@@ -17,7 +17,7 @@ module.exports = {
 
     async index(request, response) {
         const curso = await Curso.findAll({
-            attributes: ['titulo', 'imagem', 'link']
+            attributes: ['id','titulo', 'imagem', 'link']
         })
         return response.json(curso)
     },
