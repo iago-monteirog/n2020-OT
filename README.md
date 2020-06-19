@@ -31,3 +31,7 @@ Nícolas Nunes RM82331
 
 # Local das querys 
 - src/controller/
+
+# Arquivo da coleção JSON 
+
+N2020.postman_collection.json
