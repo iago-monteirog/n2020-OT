@@ -22,6 +22,14 @@ module.exports = {
         return response.json(curso)
     },
 
+    async getOne(request, response) {
+        const {id_curso} = request.body;
+        const curso = await Curso.findOne({
+        attributes: ['titulo', 'imagem', 'link'],
+        }, { where: { id: id_curso } });
+        return response.json(curso);
+    },
+
     async update(request, response){
         const {id_curso} = request.headers;
         const {titulo, link, imagem} = request.body;

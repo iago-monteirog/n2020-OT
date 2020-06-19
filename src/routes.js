@@ -12,6 +12,7 @@ routes.post('/usuario', UsuarioController.create);
 
 routes.post('/curso/criar', auth, CursoController.create);
 routes.get('/cursos', CursoController.index);
+routes.get('/curso', CursoController.getOne);
 routes.put('/curso/atualiza', auth, CursoController.update)
 routes.delete('/curso/deleta', auth, CursoController.delete)
 
